@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <h1 class="logo-nome">JERSEYS<span></span></h1>
+            </div>
+            <div id="buscar">
+                <input type="text" id="buscar-input" placeholder="Pesquisar produto" oninput="buscarProdutos()">
+                <button onclick="buscarSite()">Buscar</button>
+            </div>
+            <div id="carrinho-icon" onclick="toggleCarrinho()">
+                <div class="imagem">
+                    <img  class="cesta" src="img/cesta.png" alt="">
+                </div>
+                <span id="cont-carrinho"></span>
+            </div>
+            <div id="carrinho-itens" >
+                <ul id="itens-lista"></ul>
+                <span id="preco-total">Valor Total: R$0,00</span>
+                <button class="limpa" onclick="limparCarrinho()">Limpar Carrinho</button>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="container">
+            <div class="produtos">
+                <div class="produto-linha">
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="img2/61NEA2bR94L._AC_UY1000_.jpg" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>JERSEY 1</h3>
+                            <p>R$ 80,00</p>
+                            <button onclick="addCarrinho('Moletom 1', 80.00)">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="img2/ajy4gs18104-p76blck00aiv_1.jpg" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>JERSEY 2</h3>
+                            <p>R$ 120,00</p>
+                            <button onclick="addCarrinho('Moletom 2', 120.00)">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="img2/img-2457788-f.jpg" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>JERSEY 3</h3>
+                            <p>R$ 90,00</p>
+                            <button onclick="addCarrinho('Moletom 3', 90.00)">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="produto-linha">
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="img2/Regata-Mitchell---Ness-NBA-Swingman-Jersey-Cleveland-Cavaliers-Alternate-2008-09-Lebron-James-Azul-Marinho.webp" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>JERSEY 4</h3>
+                            <p>R$ 140,00</p>
+                            <button onclick="addCarrinho('JERSEY 1', 140.00)">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="img2/Mitchell_and_Ness_Anfernee_Hardaway_Orlando_Magic_Swingman_Jersey_94-95_MNOM18190_Black_hero_1200x.webp" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>JERSEY 5</h3>
+                            <p>R$ 110,00</p>
+                            <button onclick="addCarrinho('Moletom 5', 110.00)">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="img2/Rebel_58361701_purple_hi-res.jpg" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>JERSEY 6</h3>
+                            <p>R$ 85,00</p>
+                            <button onclick="addCarrinho('Moletom 6', 85.00)">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+
+
+
+
+
+
+
+    
+</body>
+</html>
+
+

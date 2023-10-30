@@ -1,0 +1,163 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 400 18px 'Lucida', sans-serif;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    
+}
+
+/* HEADER */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 10px;
+}
+
+#header, #main {
+    margin: 0 128px;
+}
+
+#carrinho-icon {
+    cursor: pointer;
+    display: flex;
+    align-items: baseline;
+}
+
+.produto-linha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70vw;
+    margin: 15px 0;
+}
+
+.produto {
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    height: 360px;
+    justify-content: space-between;
+    align-items: center;    
+    text-align: center;
+    border: 3px solid black;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 80px;
+
+    
+}
+.produtos {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.produtos img {
+    width: 150px;
+}
+.produto button {
+    background-color: #00aaff;
+    padding: 7px 10px;
+    border-radius: 10px;
+    color: white;
+    margin-top: 5px;
+}
+button{
+    cursor: pointer;
+}
+.logo span {
+    color: brown;
+    font-size: 20px;
+}
+input {
+    border: 2px solid black;
+    border-radius: 15px ;
+    padding: 8px 15px;
+    width: 500px;
+}
+#buscar button {
+    background-color: #00aaff;
+    color: white;
+    border-radius: 15px ;
+    padding: 8px 15px;
+    border: 2px solid black;
+
+}
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+#carrinho-itens {
+    border: 1px solid black;
+    padding: 10px;
+    position: absolute;
+    left: 90%;
+    text-align: center;
+    top: 10%;
+    background-color: white;
+    width: 120px;
+}
+
+.add {
+    background-color: greenyellow;
+}
+.remove {
+    background-color: red;
+}
+.add, .remove {
+    padding: 2px 5px;
+    border-radius: 10px;
+    width: 23px;
+    color: white;
+}
+
+.limpa {
+    background-color: darkgrey;
+}
+
+.logo-nome {
+    font: 400 35px black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.cesta {
+    width: 70px;
+    height: auto;
+    padding: 10px;
+    border-top: 10px;
+}
+
+.produto button:hover {
+    background-color: #0000ff;
+    padding: 7px 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+#buscar button:hover {
+    background-color: #0000ff;
+    color: white;
+    border-radius: 15px ;
+    padding: 8px 15px;
+
+}
+
+.item {
+    padding: 10px;
+}
